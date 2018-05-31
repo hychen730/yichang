@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+/*public*/
+body{font-family: "微软雅黑";font-size: 14px;}
+h4{font-size: 24px;font-weight: bold;color: #fa4e7e;padding-left: 20px;border-left: 3px solid #fa4e7e;margin-bottom: 15px;box-sizing: border-box;position: relative;}
+h5{font-size: 20px;font-weight: bold;color: #fa4e7e;}
+h6{font-size: 18px;font-weight: bold;color: #fa4e7e;}
+.gWidth{width: 1200px;margin:0 auto;}
+.mt13{margin-top: 13px;}
+.mt-5{margin-top: -5px;}
+.mt22{margin-top: 22px;}
+.mt44{margin-top: 44px;}
+.mb44{margin-bottom: 44px;}
+.mt90{margin-top: 90px;}
+.mb20{margin-bottom: 20px;}
+.ml0{margin-left: 0px;}
+.mr0{margin-right: 0px;}
+/*顶部logo*/
+.top{padding-top: 27px;padding-bottom: 19px;font-size: 0px;}
+.top>span{display: block; font-size: 40px;color: #fa4e7e;}
+.top>em{display: block; font-size: 16px;color: #999;}
+/*导航条*/
+nav{background: #fa4e7e; }
+.navMarry{font-size: 0px;padding: 15px 0px;display: flex;}
+.navMarry>a{font-size: 14px;color: #fff;margin: 0 auto;}
+.navMarry>a:first-child{margin-left: 0px;}
+.navMarry>a:last-child{margin-right: 0px;}
+/*焦点图*/
+.banner{width: 910px;height: 560px;overflow: hidden;position: relative;box-sizing: border-box;}
+.banner>.banner_img{height: 560px;font-size: 0;position: absolute;left: 0;top: 0;}
+.banner>.banner_img>li{float: left;}
+.banner>.spot{position: absolute;bottom: 44px;left: 66px;font-size: 0;}
+.banner>.spot>li{width: 9px;height: 9px;border-radius: 50%;background: #fff;display: inline-block;margin-right: 11px;}
+.banner>.spot>li:last-child{margin-right: 0px;}
+.banner>.spot>li.on{background: #FB4E7E;}
+.banner>.btn{width: 0px;height: 0px;line-height: 0px;text-align: center;font-size: 28px;color: #fff;background: rgba(0,0,0,0);position: absolute;top: 45%;cursor: pointer;}
+.banner>.btn_l{left: 0%;}
+.banner>.btn_r{right: 0%;}
+/*合作商家*/
+.partner{padding: 15px;padding-bottom: 0px;border: 1px solid #EFEFEF;width: 270px;height: 560px;box-sizing: border-box;}
+.partner>h5>a{font-size: 14px;color: #666;float: right;margin-top: 8px;}
+.partner>ul{margin-top: 12px;}
+.partner>ul>li{margin-bottom: 14px;font-size: 0px;}
+.partner>ul>li>a{font-size: 12px;color: #444;}
+/*婚庆公司*/
+.marryCompany>ul>li{box-sizing: border-box; float: left;border: 2px solid #FDB3C7;margin-right: 20px;margin-bottom: 20px;}
+.marryCompany>ul>li:nth-child(6n){margin-right: 0px;}
+.marryCompany>ul>li>a>img{width: 179px;height: 95px;}
+.sort{margin-top: 24px;}
+.sort>div{float: left;margin-right: 86px;}
+.sort>div:nth-child(2n){margin: 0px;}
+.sort>div>ul>li:nth-child(2){width: 305px;margin-left: 20px;}
+.sort>div>ul>li:nth-child(2)>div{padding-right: 14px;}
+.sort>div>ul>li:nth-child(2)>div>a>h6{text-align: center;}
+.sort>div>ul>li:nth-child(2)>div>a>p{font-size: 12px;color: #666;line-height: 21px;margin-top: 9px;}
+.sort>div>ul>li:nth-child(2)>ul{margin-top: 9px;}
+.sort>div>ul>li:nth-child(2)>ul>li>a{line-height: 24px;font-size: 14px;color: #666;}
+.sort>div>ul>li:nth-child(2)>ol{margin-top: 16px;}
+.sort>div>ul>li:nth-child(2)>ol>li{float: left;}
+.sort>div>ul>li:nth-child(2)>ol>li{margin-right: 20px;width: 88px;overflow: hidden;}
+.sort>div>ul>li:nth-child(2)>ol>li:nth-child(3){margin-right: 0px;}
+.sort>div>ul>li:nth-child(2)>ol>li>a>p{font-size: 12px;color: #666;text-align: center;margin-top: 6px;}
+/*婚纱影楼*/
+.photoStudio>p{font-size: 0px;display: flex;width: 910px;}
+.photoStudio>p>a{display: block; margin: 0 auto;}
+.photoStudio>p>a:nth-child(1){margin-left: 0px;}
+.photoStudio>p>a:nth-child(4){margin-right: 0px;}
+/*婚车租赁*/
+.mRright{width: 271px;}
+.mRright>div>p{font-size: 0px;}
+.mRright>div>p>em{display: inline-block;padding-right: 18px;padding-left: 3px;padding-bottom: 7px;font-size: 24px;color: #fb4e7e;border-bottom: 2px solid #fb4e7e;}
+.mRright>div>p>a{font-size: 14px;color: #444;margin-top: 12px;}
+.mRright>div>ul{margin-top: -2px;padding-top: 2px; border-top: 2px solid #E4E4E4;}
+.mRright>div>ul>li{padding-top: 12px;font-size: 0px;}
+.mRright>div>ul>li>a{font-size: 14px;color: #444;}
+/*幸福瞬间*/
+.happyMoment>div{height: 721px;display: flex;flex-wrap: wrap; }
+.happyMoment>div>a{font-size: 0px;margin: auto;}
+.happyMoment>div>a:nth-child(1){margin-left: 0px;}
+.happyMoment>div>a:nth-child(2){margin-top: 0px;}
+.happyMoment>div>a:nth-child(3){margin-top: 0px;}
+.happyMoment>div>a:nth-child(4){margin-reft: 0px;margin-top: 0px;}
+.happyMoment>div>a:nth-child(5){margin-left: 0px;}
+.happyMoment>div>a:nth-child(6){margin-top: -44px;}
+.happyMoment>div>a:nth-child(7){margin-reft: 0px;margin-top: -44px;}
+/* 底部信息 */
+footer{text-align: center;background: #FAFAFA;border-top: 1px solid #EDEEF0;color: #626262;padding-top: 38px;}
+footer>p{margin-bottom: 18px;font-size: 0px;}
+footer>p>a{font-size: 12px;color: #626262;}
+footer>p>em{font-size: 12px;color: #626262;display: inline-block;margin: 0 4px;}
+footer>p>em>a{font-size: 12px;color: #626262;}
+
+
+
+
+
+
+
+
+

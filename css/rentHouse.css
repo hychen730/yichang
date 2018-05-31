@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+/*  public  */
+body{font-family: "微软雅黑";font-size: 12px;}
+.gWidth{width: 1200px;margin:0 auto;}
+.part_1{border-top: 2px solid #EDEEF0;height: 4px;background: #FAFAFA;}
+.mlnone{margin-left: 0;}
+.mrnone{margin-right: 0;}
+.bg_1{background: #E6EBCA;}
+.bg_2{background: #C5DCF6;}
+.bg_3{background: #D8EFCA;}
+.bg_4{background: #FFCBCA;}
+.pt20{padding-top: 20px;}
+.ml15{margin-left: 15px;}
+/*顶部导航*/
+header{background: #292C33;}
+header>.menu{padding: 12px 0px;display: flex;}
+header>.menu>li{font-size: 0px;margin: 0 auto;}
+header>.menu>li>a{font-size: 12px;color: #616878;}
+header>.menu>li:first-child{margin-left: 0px;}
+header>.menu>li:last-child{margin-right: 0px;}
+/*房屋信息菜单*/
+.rentMenu{height: 106px;line-height: 106px;}
+.rentMenu>.rentMenu_l{vertical-align: middle;font-size:0px;}
+.rentMenu>.rentMenu_r{font-size: 0px;}
+.rentMenu>.rentMenu_r>a{font-size: 16px;margin-left: 37px;color: #42556f;}
+.rentMenu>.rentMenu_r>a.active{color: #6eb92b;}
+/*查找*/
+.search{width: 1200px;height: 518px;background: url(../img/rentHouse/search_bg.png) repeat-x center;position: relative;}
+.search_int{width: 850px;height: 98px;background: rgba(0,0,0,0.5);border: 2px solid rgba(0,0,0,0.3);border-radius: 4px; box-sizing: border-box;position: absolute;top: 50%;left: 50%;margin-top: -49px;margin-left: -425px;padding: 22px;}
+.search_int>div{width: 120px;height: 50px;background: #fff;box-sizing: border-box;float: left;margin-left: 2px;}
+.search_int>div:first-child{margin-left: 0px;}
+.search_int>div>select{-webkit-appearance: none;-moz-appearance: none;appearance: none;background: url(../img/rentHouse/search_down.png) no-repeat center right;width: 76px;margin: 16px 22px;font-size: 14px;color: #666666; }
+.search_int>.place{width: 200px;padding: 18px 10px;}
+.search_int>.place>input[type="text"]{font-size: 14px;color: #666666; }
+.search_int>.search_btn{width: 110px;text-align: center;line-height: 50px; background: #6EB92B;color: #fff;font-size: 18px;}
+.search_int>.search_btn>input[type="button"]{color: #fff;font-size: 18px;}
+/*内容*/
+/*左边部分*/
+.main_left{margin-top: 30px;width: 250px;}
+/*顶部按钮*/
+.left_top>p{margin-bottom: 10px;font-size: 0px;}
+.left_top>p>a{font-size: 14px;width: 120px;height: 42px;line-height: 42px;text-align: center;color: #666;}
+/*最新房产信息  加盟中介*/
+.left_btm{width: 250px;box-sizing: border-box;margin-top: 18px;}
+.left_btm>h4{width: 118px;text-align: center; font-size: 18px;font-weight: bold;color: #6EB92B;padding:8px 3px;border-bottom: 1px solid #6EB92B;box-sizing: border-box;z-index: 5;position: relative;}
+.left_btm>ul{padding-top: 16px;border-top: 1px solid #E4E4E4;margin-top: -1px;z-index: 1;position: relative;}
+.left_btm>ul>li{margin-bottom: 14px;}
+.left_btm>ul>li>a{color: #444444;font-size: 14px;}
+/*房屋信息*/
+.main_right{width: 930px;margin-top: 32px;}
+.main_right table{border-collapse: collapse;width: 100%;}
+.main_right table tr{border-bottom: 1px solid #EEEEEE;}
+.main_right table tr:first-child{color: #222f08;background: #f0f8e9;font-size: 14px;}
+.main_right table tr td{padding: 12px 0px 12px 20px;box-sizing: border-box;}
+.main_right table tr td a{color: #7a7e81;font-size: 14px;}
+.main_right>div{text-align: center;padding: 20px 0px; box-sizing: border-box;}
+.main_right>div>span{font-size: 0px;color: #999;}
+.main_right>div>span>em{display: inline-block;font-size: 14px;}
+.main_right>div>span>a{display: inline-block;width: 28px;height: 30px;line-height: 30px; border: 1px solid #E8E8E9;font-size: 14px;color: #999;border-left: none;}
+.main_right>div>span>a:first-child{border-left:1px solid #E8E8E9;}
+.main_right>div>span>.page_active{color: #666;}
+/* 底部信息 */
+footer{text-align: center;background: #FAFAFA;border-top: 1px solid #EDEEF0;color: #626262;padding-top: 38px;}
+footer>p{margin-bottom: 18px;font-size: 0px;}
+footer>p>a{font-size: 12px;color: #626262;}
+footer>p>em{font-size: 12px;color: #626262;display: inline-block;margin: 0 4px;}
+footer>p>em>a{font-size: 12px;color: #626262;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

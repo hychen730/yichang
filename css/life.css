@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+/*public*/
+body{font-family: "微软雅黑";font-size: 12px;}
+h4{font-size: 24px;font-weight: bold;color: #6EB92B;padding-left: 20px;border-left: 3px solid #6EB92B;margin-bottom: 15px;box-sizing: border-box;}
+.gWidth{width: 1200px;margin:0 auto;}
+.part_1{border-top: 1px solid #616775;margin-top: -3px;}
+.mt36{margin-top: 36px;;}
+/*顶部导航*/
+header{background: #292C33;}
+header>.menu{padding: 12px 0px;display: flex;}
+header>.menu>li{font-size: 0px;margin: 0 auto;}
+header>.menu>li>a{font-size: 12px;color: #616878;}
+header>.menu>li:first-child{margin-left: 0px;}
+header>.menu>li:last-child{margin-right: 0px;}
+/*房屋信息菜单*/
+.lifeSearch{height: 106px;}
+.lifeSearch>.lifeSearch_l{vertical-align: middle;font-size:0px;line-height: 106px;}
+.lifeSearch>.boxS{width: 518px;height: 38px;box-sizing: border-box;border: 2px solid #6EB92B;padding: 9px 11px;margin: 30px 0px;border-radius: 19px;margin-left: 190px;padding-right: 0px; overflow: hidden;position: relative;}
+.lifeSearch>.boxS>input[type="text"]{font-size: 14px;width: 366px;padding: 0px 6px;}
+.lifeSearch>.boxS>input[type="button"]{font-size: 14px;display: inline-block;width: 85px;position: absolute;top: 0;right: 0; background: #6EB92B;height: 34px;color: #fff;}
+.lifeSearch>.lifeSearch_r>input[type="button"]{font-size: 14px;width: 138px;background: #6EB92B;height: 34px;color: #fff;margin-top: 32px;margin-right: 44px;}
+/*导航 中*/
+.nav_1{padding: 14px 0px;box-sizing: border-box;}
+.nav_1>div{font-size: 0px;}
+.nav_1>div>a{color: #666;font-size: 14px;}
+.nav_1>.nav_1Left>a{display: inline-block;margin-right: 30px;}
+.nav_1>.nav_1Right>a{display: inline-block;margin-left: 30px;;}
+/*导航 本页*/
+.navName{font-size: 0px;display: flex;margin-top: 20px;}
+.navName>span{font-size: 16px;display: inline-block;margin: 0 auto;padding: 12px 0px;box-sizing: border-box;}
+.navName>.navName_active{background: url(../img/life/navName_bg.png) no-repeat center bottom;color: #0FAB2A;}
+.navInfor{padding-top: 24px;}
+.navInfor>ul{padding: 0px 8px;}
+.navInfor>ul>li{display: flex;}
+.navInfor>ul>li>div{width: 132px; margin: 0 auto;font-size: 0px;}
+.navInfor>ul>li>div:first-child{margin-left: 0px;}
+.navInfor>ul>li>div:last-child{margin-right: 0px;}
+.navInfor>ul>li>div>a:nth-child(3){margin-right: 0px;}
+.navInfor>ul>li>div>a:nth-child(7){margin-right: 0px;}
+.navInfor>ul>li>div>a{font-size: 14px;color: #444;display: inline-block;margin: 0px 24px 18px 0px;}
+/*闲置交易区*/
+.photoNews{margin-top: 36px;}
+.photoNews>.photoNews_l>figure{border: 1px solid #E8E8E8;font-size: 0px;text-align: center;}
+.photoNews>.photoNews_l>figure>a>figcaption{height: 45px;line-height: 45px;background: rgba(0,0,0,0.6);color: #fff;font-size: 18px;}
+.photoNews>.photoNews_r>div{display: flex;text-align: center;font-size: 0px;margin-bottom: 11px;}
+.photoNews>.photoNews_r>div>figure{border: 1px solid #E8E8E8;margin-left: 16px;font-size: 0px;}
+.photoNews>.photoNews_r>div>figure>a>figcaption{height: 30px;line-height: 30px;background: rgba(0,0,0,0.4);color: #fff;font-size: 16px;}
+.photoNews>.photoNews_r>div:last-child{margin-bottom: 0px;}
+/*内容*/
+/*热门交易信息*/
+.hotNews{width: 760px;}
+.hotNews table{border-collapse: collapse;}
+.hotNews table tr{display: flex;margin-bottom: 18px;}
+.hotNews table tr td{font-size: 0px;}
+.hotNews table tr td:nth-child(1){width: 480px;}
+.hotNews table tr td:nth-child(2){width: 180px;}
+.hotNews table tr td a{font-size: 16px;color: #999;}
+.hotNews table tr td:nth-child(1) a{font-size: 16px;color: #666;}
+/*二手闲置物品*/
+.secondNews{width: 320px;}
+.secondNews>ul{margin-top: 10px;overflow: hidden;}
+.secondNews>ul>li{margin-top: 10px;margin-right: 10px;float: left; }
+.secondNews>ul>li>a{font-size: 0px;}
+.secondNews>ul>li:nth-child(2n){margin-right: 0px; }
+.secondNews>ol{margin-top: 10px;overflow: hidden;}
+.secondNews>ol>li{margin-top: 12px;font-size: 0px; }
+.secondNews>ol>li>a{color: #666;font-size: 16px;}
+/*其他热门信息*/
+.otherNews>ul>li{width: 364px;float: left;margin-right: 54px;margin-bottom: 36px;}
+.otherNews>ul>li:nth-child(3n){margin-right: 0px;}
+.otherNews>ul>li>h6>a{font-size: 16px;color: #666;font-weight: bold;}
+.otherNews>ul>li>p{margin-top: 14px;text-align: justify;line-height: 24px;}
+.otherNews>ul>li>p>a{font-size: 14px;color: #666;}
+/* 底部信息 */
+footer{background: #FAFAFA;border-top: 1px solid #EDEEF0;color: #626262;padding-top: 38px;}
+footer>div{font-size: 0px;padding-bottom: 48px;}
+footer>div>h5{font-size: 16px;line-height: 38px;color: #444;margin-bottom: 5px;}
+footer>div>a{display: inline-block;font-size: 12px;line-height: 24px;color: #444;}
+footer>div>em{display: inline-block;margin: 0 10px; font-size: 12px;line-height: 24px;color: #444;}
+footer>p{margin-bottom: 18px;font-size: 0px;text-align: center;overflow: hidden;}
+footer>p>a{font-size: 12px;color: #626262;}
+footer>p>em{font-size: 12px;color: #626262;display: inline-block;margin: 0 4px;}
+footer>p>em>a{font-size: 12px;color: #626262;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

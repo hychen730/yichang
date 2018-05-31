@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+/* public */
+body{font-family: "微软雅黑";font-size: 12px;}
+.gWidth{width: 1200px;margin:0 auto;}
+.ml-70{margin-left: 70px;}
+.mr-12{margin-right: 12px;}
+.mb-18{margin-bottom: 18px;}
+.menu-active{color: #FA4E7E;}
+
+
+/*顶部信息*/
+header{height: 41px;line-height: 41px;background: #fcfcfc;border-bottom: 2px solid #EDEEF0;}
+.top-left>span{color: #999;}
+.top-left>input{width: 98px;padding: 5px 3px;border: 1px solid #CCCCCC;margin-left: 3px;}
+.top>div>a{color: #999;display: inline-block;margin-left: 18px;}
+/*导航信息*/
+nav{padding-top: 25px;padding-bottom: 28px;}
+nav>.menu{width: 830px;}
+nav>.menu>p{font-size: 0px;display: flex;}
+nav>.menu>p>a{display: inline-block;font-size: 12px;color: #3F3F3F;margin: 0 auto;}
+nav>.menu>p>a:last-child{margin-right: 0px;}
+nav>.menu>p>a.menu-active{color: #FA4E7E;}
+/*焦点图*/
+.banner{width: 1200px;height: 400px;overflow: hidden;position: relative;}
+.banner>.banner_img{height: 400px;font-size: 0;position: absolute;left: 0;top: 0;}
+.banner>.banner_img>li{float: left;}
+.friendSearch{padding: 23px 163px;box-sizing: border-box;background: #F6F6F6;border-bottom: 1px solid #DBDBDB}
+.friendSearch>.fs-left>i{display: inline-block;width: 34px;height: 34px;line-height: 34px;text-align: center; border-radius: 50%;background: #FA4E7E;font-size: 16px;color: #fff;margin-right: 9px;}
+.friendSearch>.fs-left>span{font-size: 14px;color: #666;}
+.friendSearch>.fs-right{height: 34px;line-height: 34px;font-size: 14px;color: #666;}
+.friendSearch>.fs-right>select{width: 100px;height: 34px;line-height: 34px;padding:0px 10px;border: 1px solid #CCCCCC;box-sizing: border-box;color: #999;margin: 0px 2px;}
+.friendSearch>.fs-right>select.age{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+.friendSearch>.fs-right>select.place{width: 200px;}
+.friendSearch>.fs-right>input[type="button"]{display: inline-block;background: #FA4E7E; width: 120px;height: 34px;line-height: 34px;text-align: center;color: #fff;cursor: pointer;}
+/*内容*/
+/*最有人气 左*/
+.lavePerson{margin-top: 32px;}
+.lavePerson>.lavePerson-left{width: 271px;}
+.lavePerson>.lavePerson-left>span{display: inline-block; font-size: 18px;font-weight: bold;color: #fa4e7e;border-bottom: 2px solid #fa4e7e;padding: 0px 4px; padding-bottom: 8px;box-sizing: border-box;}
+.lavePerson>.lavePerson-left>ul{border-top: 2px solid #E4E4E4;margin-top: -2px;padding-top: 18px;}
+.lavePerson>.lavePerson-left>ul>li{font-size: 0px;margin-bottom: 10px;}
+.lavePerson>.lavePerson-left>ul>li>a{font-size: 14px;color: #333;}
+.lavePerson>.lavePerson-left>ul>li>a:first-child{display: inline-block;width: 170px;}
+.lavePerson>.lavePerson-left>ul>li>a:nth-child(2){margin: 0px 20px;}
+/*最新加入 右*/
+.lavePerson-right{width: 870px;}
+.lavePerson-right>h5{font-size: 0px;position: relative;margin-bottom: 8px;}
+.lavePerson-right>h5>em{padding-left: 13px;font-size: 18px;color: #fb4e7e;border-left: 2px solid #fb4e7e;font-weight: bold;}
+.lavePerson-right>h5>a{display: inline-block;font-size: 14px;color: #999;margin-top: 12px;position: absolute;right: 0px;}
+.lavePerson-right>ul>li{float: left;width: 236px;margin-right: 81px;margin-top: 25px;}
+.lavePerson-right>ul>li:nth-child(3n){margin-right: 0px;}
+.lavePerson-right>ul>li>h6{font-size: 13px;font-weight: bold; margin-bottom: 11px;}
+.lavePerson-right>ul>li>p{text-align: justify;font-size: 13px;}
+/*同城约会*/
+.dating{margin-top: 30px;margin-bottom: 40px;}
+.dating>div{display: block;width: 270px;box-sizing: border-box; background: #FCFCFC;border: 1px solid #F9F9F9;padding: 12px 10px;font-size: 20px;color: #666666;}
+.dating>div>span{display: inline-block;width: 102px;height: 34px;line-height: 34px;text-align: center;}
+.dating>div>em{display: inline-block;width: 102px;height: 34px;line-height: 34px; background: #FB4E7E;text-align: center;color: #fff;cursor: pointer;}
+/* 底部信息 */
+footer{text-align: center;background: #FAFAFA;border-top: 1px solid #EDEEF0;color: #626262;padding-top: 38px;}
+footer>p{margin-bottom: 18px;font-size: 0px;}
+footer>p>a{font-size: 12px;color: #626262;}
+footer>p>em{font-size: 12px;color: #626262;display: inline-block;margin: 0 4px;}
+footer>p>em>a{font-size: 12px;color: #626262;}
+
+
+
+
+
+
+

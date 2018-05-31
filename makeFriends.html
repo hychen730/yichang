@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>易畅交友</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/iconfont.css">
+<link rel="stylesheet" href="css/makeFriends.css">	
+	
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script>
+	$(function(){
+		var i=0;
+		var w=$(".banner").width();
+		var speed=3500;
+		var clickSpeed=2000;
+		var clone=$(".banner .banner_img li").first().clone();
+		$(".banner .banner_img").append(clone);
+		var size=$(".banner .banner_img li").size();
+		$(".banner_img").width(w*size);
+		/*  播放  */
+		function move(){
+			if(i==-1){
+				$(".banner .banner_img").css({left:-(size-1)*w});
+				i=size-2;
+			}
+			if(i==size){
+				$(".banner .banner_img").css({left:0});
+				i=1;
+			}
+			$(".banner_img").stop().animate({left:-i*w},clickSpeed);
+		}
+		/*  自动播放  */
+		var t=setInterval(function(){
+			i++;
+			move();
+		},speed);
+		/*  鼠标悬停  */
+		$(".banner").hover(function(){
+			clearInterval(t);
+		},function(){
+			t=setInterval(function(){
+				i++;
+				move();
+			},speed);
+		})
+	})
+</script>	
+
+</head>
+
+<body>
+<!--其他页面链接-->
+<div class="a-link gWidth">
+	<a href="culture.html">平谷文化</a>
+	<a href="life.html">易畅生活</a>
+	<a href="topic.html">易畅话题</a>
+	<a href="rentHouse.html">易畅租房</a>
+	<a href="makeFriends.html">易畅交友</a>
+	<a href="marry.html">易畅婚嫁</a>
+</div>
+<!--顶部信息-->
+<header>
+	<div class="top gWidth clearfix">
+		<div class="top-left fl">
+			<span>一站通账号</span><input type="text" class="mr-12"><span>密码</span><input type="password">
+			<a href="#">登录</a><a href="#">注册</a>
+		</div>
+		<div class="top-right fr">
+			<a href="#">房产中介系统</a>
+		</div>
+	</div>	
+</header>	
+<!--导航信息-->
+<nav class="gWidth clearfix">
+	<div class="logo fl">
+		<img src="img/makeFriends/friendLogo.png" alt="">
+	</div>
+	<div class="menu fr">
+		<p class="mb-18">
+			<a href="#">易畅首页</a>
+			<a href="#">平谷新闻</a>
+			<a href="#" class="menu-active">平谷论坛</a>
+			<a href="#" class="menu-active">平谷团购</a>
+			<a href="#" class="menu-active">礼品兑换</a>
+			<a href="#">二手场地</a>
+			<a href="#" class="menu-active">评估婚嫁</a>
+			<a href="#">志愿平谷</a>
+			<a href="#">都市卡</a>
+		</p>
+		<p>
+			<a href="#">企业黄页</a>
+			<a href="#">绿谷商城</a>
+			<a href="#">妈咪宝贝</a>
+			<a href="#">房产信息</a>
+			<a href="#">真诚交友</a>
+			<a href="#">分类广告</a>
+			<a href="#">人才市场</a>
+			<a href="#">财经频道</a>
+			<a href="#">车友会</a>
+		</p>
+	</div>
+</nav>
+<!--焦点图-->
+<div class="gWidth">
+	<div class="banner">
+		<ul class="banner_img">
+			<li><a href="#"><img src="img/makeFriends/friendBanner.png" alt=""></a></li>
+			<li><a href="#"><img src="img/makeFriends/friendBanner.png" alt=""></a></li>
+			<li><a href="#"><img src="img/makeFriends/friendBanner.png" alt=""></a></li>
+		</ul>	
+	</div>
+	<div class="friendSearch gWidth clearfix">
+		<div class="fs-left fl">
+			<i class="iconfont">&#xe615;</i><span>寻找另一颗心</span>
+		</div>	
+		<div class="fs-right ml-70 fl">
+			<select class="sex">
+				<option value="female">女性</option>
+				<option value="male">男性</option>
+			</select>
+			<select class="age">
+				<option value="age">18岁</option>
+			</select>
+			<em>到</em>
+			<select class="age">
+				<option value="age">35岁</option>
+			</select>
+			<select class="place">
+				<option value="place">所有地区</option>
+				<option value="p1">丰台</option>
+				<option value="p2">朝阳</option>
+				<option value="p3">海淀</option>
+				<option value="p4">石景山</option>
+				<option value="p5">昌平</option>
+				<option value="p6">房山</option>
+				<option value="p7">平谷</option>
+			</select>
+			<input type="button" value="搜索">
+		</div>	
+	</div>
+</div>
+<!--内容-->
+<main class="gWidth">
+	<div class="lavePerson clearfix">
+		<!--最有人气索女-->
+		<div class="lavePerson-left fl">
+			<span>最有人气索女</span>
+			<ul>
+				<li>
+					<a href="#">幸福瞬间</a>
+					<a href="#">39岁</a>
+					<a href="#">大专</a>
+				</li>
+				<li>
+					<a href="#">chenchen27</a>
+					<a href="#">35岁</a>
+					<a href="#">本科</a>
+				</li>
+				<li>
+					<a href="#">平谷本地人</a>
+					<a href="#">30岁</a>
+					<a href="#">本科</a>
+				</li>
+				<li>
+					<a href="#">西鹿角平方</a>
+					<a href="#">38岁</a>
+					<a href="#">硕士</a>
+				</li>
+				<li>
+					<a href="#">美丽的梦</a>
+					<a href="#">33岁</a>
+					<a href="#">大专</a>
+				</li>
+				<li>
+					<a href="#">wake</a>
+					<a href="#">28岁</a>
+					<a href="#">大专</a>
+				</li>
+				<li>
+					<a href="#">wake</a>
+					<a href="#">36岁</a>
+					<a href="#">本科</a>
+				</li>
+				<li>
+					<a href="#">qweqweq渴望</a>
+					<a href="#">38岁</a>
+					<a href="#">本科</a>
+				</li>
+				<li>
+					<a href="#">sdnslkdnls</a>
+					<a href="#">34岁</a>
+					<a href="#">硕士</a>
+				</li>
+				<li>
+					<a href="#">123新颖</a>
+					<a href="#">37岁</a>
+					<a href="#">本科</a>
+				</li>
+				<li>
+					<a href="#">nskdnd</a>
+					<a href="#">39岁</a>
+					<a href="#">高中</a>
+				</li>
+			</ul>
+		</div>	
+		<div class="lavePerson-right fr">
+			<h5 class="clearfix"><em>最新加入索女</em><a href="#">更多</a></h5>
+			<ul class="clearfix">
+				<li>
+					<h6>12312323渴望女士</h6>
+					<p>42岁，大专，本人：1976年出生，山东人，身高165厘米，体，要求：男，年龄在40-50岁之间，身体健康，身</p>
+				</li>
+				<li>
+					<h6>12312323渴望女士</h6>
+					<p>42岁，大专，本人：1976年出生，山东人，身高165厘米，体，要求：男，年龄在40-50岁之间，身体健康，身</p>
+				</li>
+				<li>
+					<h6>12312323渴望女士</h6>
+					<p>42岁，大专，本人：1976年出生，山东人，身高165厘米，体，要求：男，年龄在40-50岁之间，身体健康，身</p>
+				</li>
+				<li>
+					<h6>12312323渴望女士</h6>
+					<p>42岁，大专，本人：1976年出生，山东人，身高165厘米，体，要求：男，年龄在40-50岁之间，身体健康，身</p>
+				</li>
+				<li>
+					<h6>12312323渴望女士</h6>
+					<p>42岁，大专，本人：1976年出生，山东人，身高165厘米，体，要求：男，年龄在40-50岁之间，身体健康，身</p>
+				</li>
+				<li>
+					<h6>12312323渴望女士</h6>
+					<p>42岁，大专，本人：1976年出生，山东人，身高165厘米，体，要求：男，年龄在40-50岁之间，身体健康，身</p>
+				</li>
+				<li>
+					<h6>12312323渴望女士</h6>
+					<p>42岁，大专，本人：1976年出生，山东人，身高165厘米，体，要求：男，年龄在40-50岁之间，身体健康，身</p>
+				</li>
+				<li>
+					<h6>12312323渴望女士</h6>
+					<p>42岁，大专，本人：1976年出生，山东人，身高165厘米，体，要求：男，年龄在40-50岁之间，身体健康，身</p>
+				</li>
+				<li>
+					<h6>12312323渴望女士</h6>
+					<p>42岁，大专，本人：1976年出生，山东人，身高165厘米，体，要求：男，年龄在40-50岁之间，身体健康，身</p>
+				</li>
+			</ul>
+		</div>
+	</div>	
+	<div class="lavePerson clearfix">
+		<!--最有人气型男-->
+		<div class="lavePerson-left fl">
+			<span>最有人气型男</span>
+			<ul>
+				<li>
+					<a href="#">大海哥</a>
+					<a href="#">39岁</a>
+					<a href="#">大专</a>
+				</li>
+				<li>
+					<a href="#">杨海福</a>
+					<a href="#">35岁</a>
+					<a href="#">本科</a>
+				</li>
+				<li>
+					<a href="#">保健品格列</a>
+					<a href="#">30岁</a>
+					<a href="#">本科</a>
+				</li>
+				<li>
+					<a href="#">西鹿角平方</a>
+					<a href="#">38岁</a>
+					<a href="#">硕士</a>
+				</li>
+				<li>
+					<a href="#">美丽的梦</a>
+					<a href="#">33岁</a>
+					<a href="#">大专</a>
+				</li>
+				<li>
+					<a href="#">wake</a>
+					<a href="#">28岁</a>
+					<a href="#">大专</a>
+				</li>
+				<li>
+					<a href="#">wake</a>
+					<a href="#">36岁</a>
+					<a href="#">本科</a>
+				</li>
+				<li>
+					<a href="#">qweqweq渴望</a>
+					<a href="#">38岁</a>
+					<a href="#">本科</a>
+				</li>
+				<li>
+					<a href="#">sdnslkdnls</a>
+					<a href="#">34岁</a>
+					<a href="#">硕士</a>
+				</li>
+				<li>
+					<a href="#">123新颖</a>
+					<a href="#">37岁</a>
+					<a href="#">本科</a>
+				</li>
+				<li>
+					<a href="#">nskdnd</a>
+					<a href="#">39岁</a>
+					<a href="#">高中</a>
+				</li>
+			</ul>
+		</div>	
+		<!--最有人气索女-->
+		<div class="lavePerson-right fr">
+			<h5 class="clearfix"><em>最新加入型男</em><a href="#">更多</a></h5>
+			<ul class="clearfix">
+				<li>
+					<h6>skdnklf先生</h6>
+					<p>38岁，本科，喜欢运动，有稳定工作，孝敬父母，想踏实稳重的过日子，希望能够以诚相待，其他一切随缘吧</p>
+				</li>
+				<li>
+					<h6>skdnklf先生</h6>
+					<p>38岁，本科，喜欢运动，有稳定工作，孝敬父母，想踏实稳重的过日子，希望能够以诚相待，其他一切随缘吧</p>
+				</li>
+				<li>
+					<h6>skdnklf先生</h6>
+					<p>38岁，本科，喜欢运动，有稳定工作，孝敬父母，想踏实稳重的过日子，希望能够以诚相待，其他一切随缘吧</p>
+				</li>
+				<li>
+					<h6>skdnklf先生</h6>
+					<p>38岁，本科，喜欢运动，有稳定工作，孝敬父母，想踏实稳重的过日子，希望能够以诚相待，其他一切随缘吧</p>
+				</li>
+				<li>
+					<h6>skdnklf先生</h6>
+					<p>38岁，本科，喜欢运动，有稳定工作，孝敬父母，想踏实稳重的过日子，希望能够以诚相待，其他一切随缘吧</p>
+				</li>
+				<li>
+					<h6>skdnklf先生</h6>
+					<p>38岁，本科，喜欢运动，有稳定工作，孝敬父母，想踏实稳重的过日子，希望能够以诚相待，其他一切随缘吧</p>
+				</li>
+				<li>
+					<h6>skdnklf先生</h6>
+					<p>38岁，本科，喜欢运动，有稳定工作，孝敬父母，想踏实稳重的过日子，希望能够以诚相待，其他一切随缘吧</p>
+				</li>
+				<li>
+					<h6>skdnklf先生</h6>
+					<p>38岁，本科，喜欢运动，有稳定工作，孝敬父母，想踏实稳重的过日子，希望能够以诚相待，其他一切随缘吧</p>
+				</li>
+				<li>
+					<h6>skdnklf先生</h6>
+					<p>38岁，本科，喜欢运动，有稳定工作，孝敬父母，想踏实稳重的过日子，希望能够以诚相待，其他一切随缘吧</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="dating gWidth">
+		<div class="clearfix"><span class="fl">同城约会</span><em class="fr">我要加入</em></div>
+	</div>
+</main>	
+<!--底部信息-->
+<footer>
+	<p>
+		<a href="#">关于我们</a><em>|</em>
+		<a href="#">友情链接</a><em>|</em>
+		<a href="#">服务条款</a><em>|</em>
+		<a href="#">隐私政策</a><em>|</em>
+		<a href="#">网站律师</a><em>|</em>
+		<a href="#">留言反馈</a><em>|</em>
+		<a href="#">使用帮助</a><em>|</em>
+		<a href="#">广告服务</a>
+	</p>
+	<p><em>尊重网上道德，遵守《全国人大常委会关于维护互联网安全的决定》及中华人民共和国其他各项有关法律法规</em></p>
+	<p><em>Copyright 2005-2014 echang.cn All rights reserved.易畅网版权所有</em></p>
+	<p><em>经营许可证编号:京ICP证100287号 京ICP备: 12002820号 BBS经营许可证:电信业务审批[2010]字第219号函</em></p>
+	<p><em>电话: (010 )89987264 客服QQ: 371326322 <a href="#">点击这里给我发消息</a> 京公网安备: 110117000088</em></p>	
+</footer>	
+	
+</body>
+</html>

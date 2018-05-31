@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>文化</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/culture.css">
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script>
+	$(function(){
+		var i=0;
+		var w=$(".banner").width();
+		var speed=3500;
+		var clickSpeed=2000;
+		var clone=$(".banner .banner_img li").first().clone();
+		$(".banner .banner_img").append(clone);
+		var size=$(".banner .banner_img li").size();
+		$(".banner_img").width(w*size);
+		for(var j=0;j<size-1;j++){
+			$(".banner .spot").append("<li></li>");
+		}
+		$(".banner .spot li").first().addClass("on");
+		/*  向右  */
+		$(".btn_l").click(function(){
+			i--;
+			move();
+		})
+		/*  向左  */
+		$(".btn_r").click(function(){
+			i++;
+			move();
+		})
+		/*  相同  */
+		function move(){
+			if(i==-1){
+				$(".banner .banner_img").css({left:-(size-1)*w});
+				i=size-2;
+			}
+			if(i==size){
+				$(".banner .banner_img").css({left:0});
+				i=1;
+			}
+			$(".banner_img").stop().animate({left:-i*w},clickSpeed);
+			if(i==size-1){
+				$(".banner .spot li").eq(0).addClass("on").siblings().removeClass("on");
+			}else{
+				$(".banner .spot li").eq(i).addClass("on").siblings().removeClass("on");
+			}
+		}
+		/*  自动播放  */
+		var t=setInterval(function(){
+			i++;
+			move();
+		},speed);
+		
+		/*  鼠标悬停  */
+		$(".banner").hover(function(){
+			clearInterval(t);
+		},function(){
+			t=setInterval(function(){
+				i++;
+				move();
+			},speed);
+		})
+	})
+</script>	
+</head>
+
+<body>
+<!--其他页面链接-->
+<div class="a-link gWidth">
+	<a href="culture.html">平谷文化</a>
+	<a href="life.html">易畅生活</a>
+	<a href="topic.html">易畅话题</a>
+	<a href="rentHouse.html">易畅租房</a>
+	<a href="makeFriends.html">易畅交友</a>
+	<a href="marry.html">易畅婚嫁</a>
+</div>
+<!--顶部图片-->
+<div class="top-img"></div>
+<!--导航条-->
+<nav>
+	<div class="culture-menu gWidth">
+		<a href="#">首页</a>
+		<a href="#">文化动态</a>
+		<a href="#">文化产业</a>
+		<a href="#">文化特色</a>
+		<a href="#">文化遗产</a>
+		<a href="#">文化专题</a>
+		<a href="#">文化景点</a>
+		<a href="#">文化影像</a>
+		<a href="#">网友互动</a>
+	</div>	
+</nav>
+<!--新闻-->	
+<div class="news gWidth clearfix">
+	<!--焦点图-->
+	<div class="banner fl">
+		<ul class="banner_img">
+			<li>
+				<img src="img/culture/banner-img.png" alt="">
+				<p>团市委副书记姜泽廷伏平谷调研-工作动态-北京共青团</p>
+			</li>
+		</ul>	
+		<span class="btn btn_l">&lt;</span>
+		<span class="btn btn_r">&gt;</span>
+</div>
+	<div class="newsRight fr">
+		<div class="newsTop">
+			<h5>休闲平谷-桃花之都</h5>
+			<p>风光大片，你是导演！万亩桃花怒放妖娆，而其中最美的，就是您的笑脸。</p>
+		</div>
+		<ul>
+			<li><a href="#">
+				<img src="img/culture/culture-news-1.png" alt="">
+				<div>
+					<h6>平谷区益民书屋</h6>
+					<p>近日，平谷区图书馆共为全区301个益民书屋配送图书</p>
+				</div>
+			</a></li>
+			<li><a href="#">
+				<img src="img/culture/culture-news-2.png" alt="">
+				<div>
+					<h6>北京平谷将重点发</h6>
+					<p>近日，平谷区图书馆共为全区301个益民书屋配送图书</p>
+				</div>
+			</a></li>
+			<li><a href="#">
+				<img src="img/culture/culture-news-3.png" alt="">
+				<div>
+					<h6>中国乐谷华东乐库</h6>
+					<p>近日，平谷区图书馆共为全区301个益民书屋配送图书</p>
+				</div>
+			</a></li>
+			<li><a href="#">
+				<img src="img/culture/culture-news-4.png" alt="">
+				<div>
+					<h6>“印记平谷”国际摄影大赛</h6>
+					<p>近日，平谷区图书馆共为全区301个益民书屋配送图书</p>
+				</div>
+			</a></li>
+		</ul>
+	</div>
+</div>		
+	<!--插图-->	
+<div class="illustration-1 gWidth"></div>
+<!--文化影像 访谈 微话题-->	
+<div class="gWidth clearfix mt22">
+<div class="cultureVideo fl">
+	<h5 class="clearfix"><em>文化影像</em><a href="#">更多</a></h5>
+	<ul>
+		<li>
+			<figure><a href="#">
+				<img src="img/culture/culture-videos-1.png" alt="">
+				<figcaption>休闲大会花落平谷</figcaption>
+			</a></figure>
+			<figure><a href="#">
+				<img src="img/culture/culture-videos-2.png" alt="">
+				<figcaption>助力申办休闲大会</figcaption>
+			</a></figure>
+			<figure><a href="#">
+				<img src="img/culture/culture-videos-3.png" alt="">
+				<figcaption>申办休闲大会</figcaption>
+			</a></figure>
+		</li>
+		<li>
+			<figure><a href="#">
+				<img src="img/culture/culture-videos-4.png" alt="">
+				<figcaption>科普视频:盐与健康</figcaption>
+			</a></figure>
+			<figure><a href="#">
+				<img src="img/culture/culture-videos-5.png" alt="">
+				<figcaption>科普动漫:环保系列</figcaption>
+			</a></figure>
+			<figure><a href="#">
+				<img src="img/culture/culture-videos-6.png" alt="">
+				<figcaption>2015乐谷音乐节开幕</figcaption>
+			</a></figure>
+		</li>
+	</ul>
+		
+</div>	
+<div class="right fr">
+<div class="discuss">
+	<h5 class="clearfix"><em>访谈</em><a href="#">更多</a></h5>	
+	<div>
+		<figure><a href="#">
+				<img src="img/culture/culture-discuss-1.png" alt="">
+				<figcaption>访谈名称</figcaption>
+		</a></figure>
+		<figure><a href="#">
+				<img src="img/culture/culture-discuss-2.png" alt="">
+				<figcaption>访谈名称</figcaption>
+		</a></figure>
+	</div>
+</div>	
+<div class="culture-topic">
+	<h5 class="clearfix"><em>访谈</em><a href="#">更多</a></h5>	
+	<ul>
+		<li><a href="#">
+			<img src="img/culture/culture-topic-1.png" alt="">
+			<div>
+				<h6>平谷城区小角落的改善</h6>
+				<p>每一次细节的改变，都是一次思想的提升，并悄然改变着我们生活的城市</p>
+			</div>
+		</a></li>
+		<li><a href="#">
+			<img src="img/culture/culture-topic-2.png" alt="">
+			<div>
+				<h6>孩子日记发人深省</h6>
+				<p>最近，网上流行一篇小学生日记，他的悲伤印证着，父母和孩子最远的距离是“妈妈，我</p>
+			</div>
+		</a></li>
+	</ul>
+</div>		
+</div>
+</div>	
+<!--文化专题-->	
+<div class="culturePublic-1 clearfix gWidth">
+	<h5 class="clearfix"><em>文化影像</em><a href="#">更多</a></h5>	
+	<ul>
+		<li><a href="#">
+			<img src="img/culture/culture-subject-1.png" alt="">
+			<div>
+				<h6>第二届北京市民快乐冰雪季在平</h6>
+				<p>每一次细节的改变，都是一次思想的提升，并悄然改变着我们生活的城市。最近，网上流行一篇小学生日记，他的悲伤印证着，父母和孩子最远的距离是“妈妈，我。</p>
+			</div>
+		</a></li>
+		<li><a href="#">
+			<img src="img/culture/culture-subject-2.png" alt="">
+			<div>
+				<h6>“盛世花开春满园”全国书法家</h6>
+				<p>最近，网上流行一篇小学生日记，他的悲伤印证着，父母和孩子最远的距离是“妈妈，我。每一次细节的改变，都是一次思想的提升，并悄然改变着我们生活的城市。</p>
+			</div>
+		</a></li>
+		<li><a href="#">
+			<img src="img/culture/culture-subject-3.png" alt="">
+			<div>
+				<h6>平谷节奏发力筹备世界休闲大会</h6>
+				<p>每一次细节的改变，都是一次思想的提升，并悄然改变着我们生活的城市。最近，网上流行一篇小学生日记，他的悲伤印证着，父母和孩子最远的距离是“妈妈，我。</p>
+			</div>
+		</a></li>
+		<li><a href="#">
+			<img src="img/culture/culture-subject-4.png" alt="">
+			<div>
+				<h6>走进“天真者”的神秘世界</h6>
+				<p>最近，网上流行一篇小学生日记，他的悲伤印证着，父母和孩子最远的距离是“妈妈，我。每一次细节的改变，都是一次思想的提升，并悄然改变着我们生活的城市。</p>
+			</div>
+		</a></li>
+	</ul>
+	
+	
+	
+	
+	
+	
+</div>
+	<!--插图-->	
+<div class="illustration-2 gWidth"></div>
+<!--旅游分类-->
+<div class="culturePublic-1 clearfix gWidth">
+	<h5 class="clearfix"><em>旅游分类</em><a href="#">更多</a></h5>	
+	<div class="bt">
+		<figure><a href="#">
+			<img src="img/culture/culture-sights-1.png" alt="">
+			<figcaption>乡村游</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-sights-2.png" alt="">
+			<figcaption>红色之旅</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-sights-3.png" alt="">
+			<figcaption>长城游</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-sights-4.png" alt="">
+			<figcaption>地质文化游</figcaption>
+		</a></figure>
+	</div>
+	<div>
+		<figure><a href="#">
+			<img src="img/culture/culture-sights-5.png" alt="">
+			<figcaption>戏水寻石游</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-sights-6.png" alt="">
+			<figcaption>采摘游</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-sights-7.png" alt="">
+			<figcaption>自驾游</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-sights-8.png" alt="">
+			<figcaption>公园游</figcaption>
+		</a></figure>
+	</div>
+</div>
+<!--十六景-->
+<div class="culturePublic-1 clearfix gWidth">
+	<h5 class="clearfix"><em>十六景</em><a href="#">更多</a></h5>	
+	<div class="bt">
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-1.png" alt="">
+			<figcaption>青龙山</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-2.png" alt="">
+			<figcaption>文峰塔</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-3.png" alt="">
+			<figcaption>老象峰</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-4.png" alt="">
+			<figcaption>玻璃台</figcaption>
+		</a></figure>
+	</div>
+	<div>
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-5.png" alt="">
+			<figcaption>将军关</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-6.png" alt="">
+			<figcaption>挂甲峪</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-7.png" alt="">
+			<figcaption>丫髻山</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-8.png" alt="">
+			<figcaption>轩辕台</figcaption>
+		</a></figure>
+	</div>
+</div>
+<!--寺庙志略-->	
+<div class="culturePublic-1 clearfix gWidth">
+	<h5 class="clearfix"><em>寺庙志略</em><a href="#">更多</a></h5>	
+	<ul>
+		<li><a href="#">
+			<img src="img/culture/culture-subject-1.png" alt="">
+			<div>
+				<h6>轩辕庙</h6>
+				<p>轩辕庙，也称黄帝庙，坐北朝南，最早建于汉代，占地约9.33公顷。庙院长140米，宽84米。主要建筑有庙门、诚心亭、碑亭和人文初祖殿。院内有古柏16棵，最珍贵者当属“黄帝手植柏”与“汉武挂甲柏”。庙址设在桥山之 麓。唐代正式将祭祀活动列</p>
+			</div>
+		</a></li>
+		<li><a href="#">
+			<img src="img/culture/culture-subject-2.png" alt="">
+			<div>
+				<h6>丫髻山</h6>
+				<p>丫髻山风景区位于北京市平谷区刘家店镇（距天安门91公里，据东直门70公里，距金海湖45公里。）因山巅两块巨石状若古代女孩头上的丫髻，因此得名丫髻山。四方百姓又称丫髻山为“东大山”。丫髻山海拔363米，丫髻山上的碧霞元君祠为京东著名道观，始建于唐代鼎盛于</p>
+			</div>
+		</a></li>
+	</ul>
+	
+	
+	
+	
+	
+	
+</div>
+	<!--插图-->	
+<div class="illustration-3 gWidth"></div>
+<!--文化产业-->
+<div class="culturePublic-1 clearfix gWidth">
+	<h5 class="clearfix"><em>文化产业</em><a href="#">更多</a></h5>	
+	<div class="bt">
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-1.png" alt="">
+			<figcaption>幸福平谷</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-2.png" alt="">
+			<figcaption>中国乐谷</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-3.png" alt="">
+			<figcaption>京津商谷</figcaption>
+		</a></figure>
+		<figure><a href="#">
+			<img src="img/culture/culture-tour-4.png" alt="">
+			<figcaption>生态绿谷</figcaption>
+		</a></figure>
+	</div>
+	
+</div>
+<!--文化特色-->
+<div class="culturePublic-2 gWidth clearfix">
+	<h5 class="clearfix"><em>文化特色</em><a href="#">更多</a></h5>
+	<ul class="clearfix">
+		<li>
+			<h5>民俗</h5>
+			<p><a href="#">平谷人过生日的那些旧习</a></p>
+			<p><a href="#">平谷民俗村特色推荐</a></p>
+			<p><a href="#">平谷十大特色民俗村</a></p>
+			<p><a href="#"><img src="img/culture/culture-special-1.png" alt=""></a></p>
+		</li>
+		<li>
+			<h5>农家</h5>
+			<p><a href="#">翟各庄民俗旅游村</a></p>
+			<p><a href="#">黄松峪民俗旅游村</a></p>
+			<p><a href="#">金海湖海子民俗村</a></p>
+			<p><a href="#"><img src="img/culture/culture-special-2.png" alt=""></a></p>
+		</li>
+		<li>
+			<h5>饮食</h5>
+			<p><a href="#">太后大饼</a></p>
+			<p><a href="#">玻璃叶豆腐</a></p>
+			<p><a href="#">豆角卷子</a></p>
+			<p><a href="#"><img src="img/culture/culture-special-3.png" alt=""></a></p>
+		</li>
+		<li>
+			<h5>方言</h5>
+			<p><a href="#">平谷方言大全</a></p>
+			<p><a href="#">平谷方言</a></p>
+			<p><a href="#">说说我的家乡话</a></p>
+			<p><a href="#"><img src="img/culture/culture-special-4.png" alt=""></a></p>
+		</li>
+	</ul>
+</div>
+<!--文化遗产-->
+<div class="culturePublic-2 gWidth clearfix">
+	<h5 class="clearfix"><em>文化遗产</em><a href="#">更多</a></h5>
+	<ul class="clearfix">
+		<li>
+			<h5>遗产</h5>
+			<p><a href="#">平谷区“平谷调”</a></p>
+			<p><a href="#">平谷抗日歌谣</a></p>
+			<p><a href="#">平谷方言</a></p>
+			<p><a href="#">荆条工具编艺技术</a></p>
+			<p><a href="#"><img src="img/culture/culture-heritage-2.png" alt=""></a></p>
+		</li>
+		<li>
+			<h5>故事</h5>
+			<p><a href="#">姜太公的钓鱼台</a></p>
+			<p><a href="#">太阳和月亮</a></p>
+			<p><a href="#">二郎神担山赶太阳</a></p>
+			<p><a href="#">傻小子说了巧媳妇</a></p>
+			<p><a href="#"><img src="img/culture/culture-heritage-1.png" alt=""></a></p>
+		</li>
+		<li>
+			<h5>传说</h5>
+			<p><a href="#">老牛说话</a></p>
+			<p><a href="#">朝阳洞传说</a></p>
+			<p><a href="#">“玄黄爷的亮甲坡”传说</a></p>
+			<p><a href="#">“上宅”称为传说</a></p>
+			<p><a href="#"><img src="img/culture/culture-heritage-3.png" alt=""></a></p>
+		</li>
+		<li>
+			<h5>人物</h5>
+			<p><a href="#">高硕言</a></p>
+			<p><a href="#">火山岩</a></p>
+			<p><a href="#">金海石</a></p>
+			<p><a href="#">陶塑猪头</a></p>
+			<p><a href="#"><img src="img/culture/culture-heritage-4.png" alt=""></a></p>
+		</li>
+		<li>
+			<h5>文化名人</h5>
+			<p><a href="#">文学家</a></p>
+			<p><a href="#">收藏家</a></p>
+			<p><a href="#">摄影家</a></p>
+			<p><a href="#">书法家</a></p>
+			<p><a href="#"><img src="img/culture/culture-heritage-5.png" alt=""></a></p>
+		</li>
+	</ul>
+</div>
+<!--网友互动-->	
+<div class="cultureInteract clearfix gWidth">
+	<h5 class="clearfix"><em>寺庙志略</em><a href="#">更多</a></h5>	
+	<ul>
+		<li>
+			<a href="#"><img src="img/culture/culture-interact-1.png" alt=""></a>
+			<div><a href="#">
+				<h6>易畅志愿服务团队走进特教中心</h6>
+				<p>阳春三月，万物复苏，在这个充满希望的季节里洋溢着一种浓郁的气息，那就是雷锋精神。阳春三月，万物复苏，在这个充满希望的季节里洋溢着一种浓郁的气息，那就是雷锋精神。阳春三月，万物复苏，在这个充满希望的季节里洋溢着一种浓郁的气息，那就是雷锋精神。</p>
+			</a></div>
+		</li>
+	</ul>
+</div>
+<!--底部信息-->
+<footer>
+	<p>
+		<a href="#">关于我们</a><em>|</em>
+		<a href="#">友情链接</a><em>|</em>
+		<a href="#">服务条款</a><em>|</em>
+		<a href="#">隐私政策</a><em>|</em>
+		<a href="#">网站律师</a><em>|</em>
+		<a href="#">留言反馈</a><em>|</em>
+		<a href="#">使用帮助</a><em>|</em>
+		<a href="#">广告服务</a>
+	</p>
+	<p><em>尊重网上道德，遵守《全国人大常委会关于维护互联网安全的决定》及中华人民共和国其他各项有关法律法规</em></p>
+	<p><em>Copyright 2005-2014 echang.cn All rights reserved.易畅网版权所有</em></p>	
+</footer>	
+</body>
+</html>
